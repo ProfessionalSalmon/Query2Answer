@@ -16,4 +16,4 @@ This project is designed to answer queries based on a `MS MARCO` dataset using s
 
 4. **Result Display**: 
     
-    The query, best sentence, summary, and similarity score between the query and the passage are displayed in a user-friendly format (i.e., pandas DataFrame).
+    The query, best sentences, summarized text, and similarity score between the query and the passage are displayed in a user-friendly format (i.e., pandas DataFrame).

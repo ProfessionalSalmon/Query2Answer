@@ -1,7 +1,7 @@
 # Query Answering and Summarization with Semantic Search
 This project is designed to answer queries based on a `MS MARCO` dataset using semantic search, relevant sentence extraction, and text summarization. The system is capable of answering both user input queries and dataset queries by.
 
-## How It Works
+## 🧸How It Works
 1. **Semantic Search**: `sentence-transformers`
 
     When a query is entered (either from the user or pre-defined in the dataset), the system generates embeddings for the query and passages and searches the dataset to find the most relevant passage.

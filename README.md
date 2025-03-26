@@ -8,11 +8,11 @@ This project is designed to answer queries based on a `MS MARCO` dataset using s
 
 2. **Sentence Extraction**: 
     - The selected passage is split into individual sentences using `nltk.tokenize.sent_tokenize`.
-    - After finding the passage, the system extracts the most relevant sentence using similarity measures between the query embedding and sentence embeddings in the passage.
+    - To extract the most relevant sentence, the system uses a `Cross-Encoder` model to rank the sentences based on their relevance to the query. The Cross-Encoder evaluates the query and sentence pairs, and the top-ranked sentences are selected for further processing.
 
-3. **Summarization**: `pipeline('summarization')`
+3. **Summarization**: `pipeline("summarization", model="facebook/bart-large-cnn")`
 
-    The extracted relevant sentence is then summarized using a pre-trained summarization model to provide a concise answer.
+    The extracted relevant sentences are then summarized using a `facebook/bart-large-cnn` summarization model to provide a concise answer.
 
 4. **Result Display**: 
     
